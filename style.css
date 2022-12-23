@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   font-size: 62.5%;
+
+   --hue: 194;
+   --color-primary: hsl(var(--hue), 100%, 63%);
+   --color-text: #303030;
+}
+
+body {
+   font-size: 1.6rem;
+
+   color: var(--color-text);
+   background-color: rgb(195, 217, 217);
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+#app {
+   max-width: 50rem;
+   margin: 0 auto;
+   padding: 2rem;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 2.5rem 0;
+}
+
+header h1 {
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+
+#search {
+   display: flex;
+   align-items: center;
+}
+
+#search input {
+   height: 3.2rem;
+   border: 1px solid #ccc;
+   border-right: none;
+   border-radius: .4rem 0 0 .4rem;
+   padding: 0 .8rem;
+   outline: none;
+}
+#search input:hover,
+#search input:focus {
+   background-color: rgb(240, 240, 240);
+}
+
+#search button {
+   background-color: var(--color-primary);
+   border: none;
+   border-radius: 0 .4rem .4rem 0;
+   height: 3.2rem;
+   padding: 0 1rem;
+   cursor: pointer;
+}
+#search button:hover {
+   filter: brightness(1.05);
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+table * {
+   font-size: 1.4rem;
+   color: var(--color-text);
+}
+
+th {
+   background-color: var(--color-primary);
+   text-align: left;
+   font-weight: normal;
+   padding: 1.5rem;
+}
+th:first-child {
+   border-top-left-radius: .4rem;
+}
+th:last-child {
+   border-top-right-radius: .4rem;
+}
+
+tr:nth-child(even) {
+   background-color: #eee;
+}
+tr:nth-child(odd) {
+   background-color: rgb(228, 228, 228);
+}
+
+td {
+   padding: 1.5rem;
+}
+td.user {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+td.user img {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 999px;
+}
+td.user p {
+   font-weight: bold;
+}
+td button.delete {
+   background: none;
+   border: none;
+   color: red;
+   cursor: pointer;
+   font-size: 1.6rem;
+}
+td button.delete:hover {
+   transform: scale(1.2);
+}

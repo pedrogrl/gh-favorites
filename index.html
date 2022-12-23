@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Github Favorites</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    
@@ -11,8 +12,8 @@
 
       <header>
          <h1>Github Favorites</h1>
-         <div id="search-div">
-            <label for="search-input">Github User</label>
+         <div id="search">
+            <label for="search-input" class="sr-only">Github User</label>
             <input type="text" placeholder="Github User" id="search-input">
             <button>&plus;</button>
          </div> 
@@ -44,7 +45,7 @@
                   100
                </td>
                <td>
-                  <button>&times;</button>
+                  <button class="delete">&times;</button>
                </td>
             </tr>
 
@@ -63,7 +64,7 @@
                   100
                </td>
                <td>
-                  <button>&times;</button>
+                  <button class="delete">&times;</button>
                </td>
             </tr>
          </tbody>
