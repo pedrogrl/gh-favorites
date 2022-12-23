@@ -1,75 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Github Favorites</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   
-   <div id="app">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Github Favorites</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="js/index.js" type="module" defer></script>
+   </head>
+   <body>
+      <div id="app">
+         <header>
+            <h1>Github Favorites</h1>
+            <form id="search">
+               <label for="search-input" class="sr-only">Github User</label>
+               <input type="text" placeholder="Github User" id="search-input" />
+               <button>&plus;</button>
+            </form>
+         </header>
 
-      <header>
-         <h1>Github Favorites</h1>
-         <div id="search">
-            <label for="search-input" class="sr-only">Github User</label>
-            <input type="text" placeholder="Github User" id="search-input">
-            <button>&plus;</button>
-         </div> 
-      </header>
+         <table>
+            <thead>
+               <tr>
+                  <th>User</th>
+                  <th>Repositories</th>
+                  <th>Followers</th>
+                  <th></th>
+               </tr>
+            </thead>
 
-      <table>
-         <thead>
-            <tr>
-               <th>User</th>
-               <th>Repositories</th>
-               <th>Followers</th>
-               <th></th>
-            </tr>
-         </thead>
-
-         <tbody>
-            <tr>
-               <td class="user">
-                  <img src="https://github.com/pedrogrl.png">
-                  <a href="https://github.com/pedrogrl" target="_blank">
-                     <p>Pedro</p>
-                     <span>pedrogrl</span>
-                  </a>
-               </td>
-               <td class="repositories">
-                  30
-               </td>
-               <td class="followers">
-                  100
-               </td>
-               <td>
-                  <button class="delete">&times;</button>
-               </td>
-            </tr>
-
-            <tr>
-               <td class="user">
-                  <img src="https://github.com/pedrogrl.png">
-                  <a href="https://github.com/pedrogrl" target="_blank">
-                     <p>Name</p>
-                     <span>Username</span>
-                  </a>
-               </td>
-               <td class="repositories">
-                  30
-               </td>
-               <td class="followers">
-                  100
-               </td>
-               <td>
-                  <button class="delete">&times;</button>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </div>
-
-</body>
+            <tbody></tbody>
+         </table>
+      </div>
+   </body>
 </html>
